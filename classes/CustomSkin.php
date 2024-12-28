@@ -20,6 +20,7 @@ class CustomSkin extends BackendSkin
     {
         return [
             themes_path('/backend/layouts'),
+            plugins_path('/zaviruha/backend/layouts'),
             $this->skinPath . '/layouts'
         ];
     }

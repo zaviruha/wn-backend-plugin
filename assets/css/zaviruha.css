@@ -1,0 +1,66 @@
+/*body.outer .layout>.layout-row.layout-head{text-align:center;background:#010ebe}*/
+
+.wn-logo, .oc-logo {
+    background-image: url(../images/zaviruha.svg);
+}
+
+.layout.control-tabs.wn-logo-transparent:not(.has-tabs), .layout.control-tabs.oc-logo-transparent:not(.has-tabs), .flex-layout-column.wn-logo-transparent:not(.has-tabs), .flex-layout-column.oc-logo-transparent:not(.has-tabs), .layout-cell.wn-logo-transparent, .layout-cell.oc-logo-transparent {
+    background-image: url(../images/zaviruha.svg);
+}
+
+/*
+body.outer {
+    background: #24675A;
+}
+body.outer .layout>.layout-row>.layout-cell .outer-form-container .horizontal-form button {
+    background: #f16600;
+}
+.btn-default.active, .btn-default:active, .btn-default:focus, .btn-default:hover, .open .dropdown-toggle.btn-default {
+    background: #f16600;
+    border-color: #f16600;
+}
+.btn-primary {
+    background: #f16600; 
+}
+.layout .report-container .manage-widgets:hover {
+    background-color: #f16600;
+    border: 1px solid #f16600;
+}
+.btn-primary.active, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .open .dropdown-toggle.btn-primary {
+    background: #ce5905;
+    border-color: #ce5905;
+}
+.btn-primary.active, .btn-primary:active, .open .dropdown-toggle.btn-primary {
+    background: #ce5905;
+    border-color: #ce5905;
+}
+.dropdown-menu .dropdown-container>ul li a:focus, .dropdown-menu .dropdown-container>ul li a:hover {
+    background-color: #f16600;
+}
+
+.dropdown-menu .dropdown-container>ul li.first-item a:active:after, .dropdown-menu .dropdown-container>ul li.first-item a:focus:after, .dropdown-menu .dropdown-container>ul li.first-item a:hover:after {
+    border-bottom: 8px solid #f16600;
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #f16600; 
+}
+.layout .field-repeater .field-repeater-add-item:active, .layout .field-repeater .field-repeater-add-item:hover, .layout .field-repeater .field-repeater-add-item:focus {
+    background-color: #f16600;  
+}
+.layout table.table.data tbody tr.rowlink:not(.nolink):hover td, .layout table.table.data tbody tr:not(.no-data).selected td {
+    background: #f16600 !important;
+}
+.layout .field-fileupload.style-image-single .upload-button:hover {
+    border: 2px dashed #f16600;
+}
+.layout .field-fileupload.style-image-single .upload-button:hover .upload-button-icon:before {
+    color: #f16600; 
+}
+.layout  nav#layout-mainmenu ul li .mainmenu-accountmenu li a:hover, .layout nav#layout-mainmenu ul li .mainmenu-accountmenu li a:focus {
+    background: #f16600;
+}
+*/
+/*
+nav#layout-mainmenu {
+    background-color: #b34700;
+}*/
