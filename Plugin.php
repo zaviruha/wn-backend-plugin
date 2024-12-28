@@ -18,9 +18,9 @@ class Plugin extends PluginBase
     public function pluginDetails(): array
     {
         return [
-            'name'        => 'author.customskin::lang.plugin.name',
-            'description' => 'author.customskin::lang.plugin.description',
-            'author'      => 'Author',
+            'name'        => 'zaviruha.backend::lang.plugin.name',
+            'description' => 'zaviruha.backend::lang.plugin.description',
+            'author'      => 'Zaviruha',
             'icon'        => 'icon-leaf'
         ];
     }
@@ -39,8 +39,9 @@ class Plugin extends PluginBase
     public function boot(): void
     {
         //если установлен базовый backendSkin - меняем на свой
-        if(Config::get('cms.backendSkin') == 'Backend\Skins\Standard')
+        if (Config::get('cms.backendSkin') == 'Backend\Skins\Standard') {
             Config::set('cms.backendSkin', Classes\CustomSkin::class);
+        }
     }
 
     /**
@@ -51,7 +52,7 @@ class Plugin extends PluginBase
         return []; // Remove this line to activate
 
         return [
-            //\Oleg\Backend\Classes\MyComponent::class => 'myComponent',
+            //\Zaviruha\Backend\Classes\MyComponent::class => 'myComponent',
         ];
     }
 
@@ -63,9 +64,9 @@ class Plugin extends PluginBase
         return []; // Remove this line to activate
 
         return [
-            'author.customskin.some_permission' => [
-                'tab' => 'author.customskin::lang.plugin.name',
-                'label' => 'author.customskin::lang.permissions.some_permission',
+            'zaviruha.backend.some_permission' => [
+                'tab' => 'zaviruha.backend::lang.plugin.name',
+                'label' => 'zaviruha.backend::lang.permissions.some_permission',
                 'roles' => [UserRole::CODE_DEVELOPER, UserRole::CODE_PUBLISHER],
             ],
         ];
@@ -80,10 +81,10 @@ class Plugin extends PluginBase
 
         return [
             'customskin' => [
-                'label'       => 'author.customskin::lang.plugin.name',
-                'url'         => Backend::url('author/customskin/mycontroller'),
+                'label'       => 'zaviruha.backend::lang.plugin.name',
+                'url'         => Backend::url('zaviruha/backend/mycontroller'),
                 'icon'        => 'icon-leaf',
-                'permissions' => ['author.customskin.*'],
+                'permissions' => ['zaviruha.backend.*'],
                 'order'       => 500,
             ],
         ];

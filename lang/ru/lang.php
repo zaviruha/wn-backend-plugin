@@ -3,7 +3,7 @@
 return [
     'plugin' => [
         'name' => 'BackendSkin',
-        'description' => 'changes backendSkin to own if the basic is installed',
+        'description' => 'изменяет backendSkin на собственный, если установлен базовый',
     ],
     'permissions' => [
         'some_permission' => 'Some permission',
