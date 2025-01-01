@@ -1,5 +1,9 @@
 # wn-backend-plugin
 
+## назначение
+плагин подменяет путь к  layouts моудля ядра backend, что позволяет изменить внешний вид админки без вмешательства в "ядро"
+
+## установка
 добавляем приватный репозиторий к проекту
 ```bash
 composer config repositories.zaviruha-backend git https://github.com/zaviruha/wn-backend-plugin.git
