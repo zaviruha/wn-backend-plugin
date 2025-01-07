@@ -2,7 +2,7 @@
 
 namespace Zaviruha\Backend;
 
-use Backend;
+//use Backend;
 use Config;
 use Backend\Models\UserRole;
 use System\Classes\PluginBase;
@@ -39,7 +39,7 @@ class Plugin extends PluginBase
     public function boot(): void
     {
         //если установлен базовый backendSkin - меняем на свой
-        if (Config::get('cms.backendSkin') == 'Backend\Skins\Standard') {
+        if (Config::get('cms.backendSkin') === 'Backend\Skins\Standard') {
             Config::set('cms.backendSkin', Classes\CustomSkin::class);
         }
     }
@@ -51,9 +51,9 @@ class Plugin extends PluginBase
     {
         return []; // Remove this line to activate
 
-        return [
+        /*return [
             //\Zaviruha\Backend\Classes\MyComponent::class => 'myComponent',
-        ];
+        ];*/
     }
 
     /**
@@ -63,13 +63,13 @@ class Plugin extends PluginBase
     {
         return []; // Remove this line to activate
 
-        return [
+        /*return [
             'zaviruha.backend.some_permission' => [
                 'tab' => 'zaviruha.backend::lang.plugin.name',
                 'label' => 'zaviruha.backend::lang.permissions.some_permission',
                 'roles' => [UserRole::CODE_DEVELOPER, UserRole::CODE_PUBLISHER],
             ],
-        ];
+        ];*/
     }
 
     /**
@@ -79,7 +79,7 @@ class Plugin extends PluginBase
     {
         return []; // Remove this line to activate
 
-        return [
+        /*return [
             'customskin' => [
                 'label'       => 'zaviruha.backend::lang.plugin.name',
                 'url'         => Backend::url('zaviruha/backend/mycontroller'),
@@ -87,6 +87,6 @@ class Plugin extends PluginBase
                 'permissions' => ['zaviruha.backend.*'],
                 'order'       => 500,
             ],
-        ];
+        ];*/
     }
 }

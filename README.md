@@ -13,6 +13,21 @@ composer config repositories.zaviruha-backend git https://github.com/zaviruha/wn
 composer require zaviruha/wn-backend-plugin
 ```
 
+(опционально) можно добавить слияние `composer.json` из плагина в основной проект, для этого в массив ключа `extra.merge-plugin.include`  `composer.json` надо добавить `"plugins/zaviruha/backend/composer.json"`, пример:
+```
+    "extra": {
+        "merge-plugin": {
+            "include": [
+                ~~~
+                "plugins/zaviruha/backend/composer.json"
+                ~~~
+            ],
+            ~~~
+        }
+    },
+```
+
+
 ## пути к файлам в порядке приоритета
 ядро
 ```
